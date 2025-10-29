@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BookDialog</class>
+ <widget class="QDialog" name="BookDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>420</width>
+    <height>240</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Книга</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_title">
+       <property name="text">
+        <string>Название:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="title_edit"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_author">
+       <property name="text">
+        <string>Автор:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="author_edit"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_year">
+       <property name="text">
+        <string>Год:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QSpinBox" name="year_spin">
+       <property name="minimum"><number>1000</number></property>
+       <property name="maximum"><number>3000</number></property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_genre">
+       <property name="text">
+        <string>Жанр:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QComboBox" name="genre_combo"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_image">
+       <property name="text">
+        <string>Обложка:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <layout class="QHBoxLayout" name="hImage">
+       <item>
+        <widget class="QLabel" name="image_name_label">
+         <property name="text">
+          <string>(не выбрано)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="choose_btn">
+         <property name="text"><string>Выбрать...</string></property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="hButtons">
+     <item>
+      <spacer name="spacer">
+       <property name="orientation"><enum>Qt::Horizontal</enum></property>
+       <property name="sizeType"><enum>QSizePolicy::Expanding</enum></property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ok_btn"><property name="text"><string>OK</string></property></widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancel_btn"><property name="text"><string>Отмена</string></property></widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
